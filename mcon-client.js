@@ -5,7 +5,7 @@
 var SimpleMsgRpc, BeanInvoker, WebSocket;
 var __mcon_client_js_version = __mcon_client_js_version;
 if(typeof require !== 'undefined') {
-    SimpleMsgRpc = require('simple-msg-rpc');
+    SimpleMsgRpc = require('mcon-common-rpc');
     WebSocket = require('ws');
     __mcon_client_js_version = require('./package.json').version;
 } else {
