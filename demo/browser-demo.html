@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>mcon client demo</title>
+</head>
+<body>
+    <script src="../dest/browser/mcon-client-all.js"></script>
+    <script>
+        mcon.init({
+            name: 'browser-empty-client',
+        });
+
+        setTimeout(function() {
+            mcon.invoke({
+                serviceId: 'mcon.ClientEchoTest',
+                methodName: 'echo',
+                params: ['123']
+            }, function(err, res) {
+                console.log(arguments);
+            })
+        }, 1000);
+    </script>
+</body>
+</html>

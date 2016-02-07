@@ -1,0 +1,22 @@
+{
+  "name": "mcon-client-js",
+  "version": "0.0.1",
+  "description": "mcon javascript client",
+  "main": "mcon-client.js",
+  "dependencies": {
+    "simple-msg-rpc": "^0.0.1",
+    "ws": "^1.0.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover _mocha"
+  },
+  "author": "summer_gba",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-print": "^2.0.1",
+    "gulp-wrap": "^0.11.0",
+    "istanbul": "^0.4.2"
+  }
+}
