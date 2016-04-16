@@ -1,10 +1,10 @@
 {
   "name": "mcon-client-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mcon javascript client",
   "main": "mcon-client.js",
   "dependencies": {
-    "mcon-common-rpc": "^0.0.1",
+    "mcon-common-rpc": "^0.0.2",
     "ws": "^1.0.1"
   },
   "scripts": {
