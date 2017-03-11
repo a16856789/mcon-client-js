@@ -4,7 +4,7 @@
   "description": "mcon javascript client",
   "main": "mcon-client.js",
   "dependencies": {
-    "mcon-common-rpc": "^0.0.2",
+    "mcon-common-rpc": "file:../mcon-common-rpc",
     "ws": "^1.0.1"
   },
   "scripts": {
