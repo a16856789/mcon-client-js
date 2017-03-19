@@ -47,7 +47,9 @@ mcon.invoke({
     serviceId: '',
     methodName: '',
     params: []
-}, function(error, callback) {
+}, function(error, response) {
     // ...
 });
 ```
+
+
