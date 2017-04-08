@@ -48,6 +48,11 @@ mcon.registerService('mcon.ClientEchoTest', {
  */
 mcon.ws  = null; // WebSocket
 mcon.rpc = null; // SimpleMsgRpc
+mcon.onerror = function(error) {
+    if (console && console.error) {
+        console.error(error);
+    }
+};
 mcon.configConnection = function() {
     var self = this;
     self.rpc = new SimpleMsgRpc({
@@ -60,7 +65,12 @@ mcon.configConnection = function() {
         },
         requestProcessor: {
             invoke: function(headers, serviceId, methodName, params, callback) {
-                self.invokeLocalService(headers, serviceId, methodName, params, callback);
+                self.invokeLocalService(headers, serviceId, methodName, params, function(error) {
+                    callback.apply(this, arguments);
+                    if (error) {
+                        self.onerror(error);
+                    }
+                });
             }
         }
     });

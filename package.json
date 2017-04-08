@@ -1,6 +1,6 @@
 {
   "name": "mcon-client-js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mcon javascript client",
   "main": "mcon-client.js",
   "dependencies": {
